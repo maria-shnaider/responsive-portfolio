@@ -1,3 +1,10 @@
+:root {
+  --home-color: #9bb899;
+  --projects-color: #fcceaa;
+  --about-color: #f5827d;
+  --contact-color: #ea4961;
+}
+
 body {
   width: 70%;
   margin: 0 auto;
@@ -58,21 +65,95 @@ li {
 a {
   text-decoration: none;
   color: white;
+}
+
+li a {
   padding: 30px;
 }
 
 .list-item-1 {
-  background-color: #9bb899;
+  background-color: var(--home-color);
 }
 
 .list-item-2 {
-  background-color: #fcceaa;
+  background-color: var(--projects-color);
 }
 
 .list-item-3 {
-  background-color: #f5827d;
+  background-color: var(--about-color);
 }
 
 .list-item-4 {
-  background-color: #ea4961;
+  background-color: var(--contact-color);
+}
+
+li a:hover {
+  zoom: 1.1;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+}
+
+.home-page-description {
+  background-color: var(--home-color);
+}
+
+.projects-page-description {
+  background-color: var(--projects-color);
+}
+
+.about-page-description {
+  background-color: var(--about-color);
+}
+
+.contact-page-description {
+  background-color: var(--contact-color);
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  background-color: #272822;
+  display: flex;
+  flex-direction: column;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: var(--contact-color);
+  transition: all 0.2s ease-in-out;
+}
+
+main {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+main h2,
+main h3 {
+  color: black;
+}
+
+main h2 {
+  font-weight: 400;
+  line-height: 2;
+}
+
+main h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8;
 }
