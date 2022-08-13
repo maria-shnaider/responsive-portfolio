@@ -6,9 +6,11 @@
 }
 
 body {
-  width: 70%;
+  width: 74%;
   margin: 0 auto;
   font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  flex-direction: column;
 }
 
 [class^="name"] {
@@ -26,6 +28,7 @@ h1 {
 
 .hero {
   display: flex;
+  max-width: 100%;
 }
 
 .header-content {
@@ -39,36 +42,32 @@ ul {
   display: flex;
   flex-direction: row;
   margin: 0;
+  max-width: 100%;
 }
 
 h1:first-child {
   background-color: #272822;
 }
 
-img {
-  max-width: 370px;
+header img {
+  max-width: 100%;
   object-fit: cover;
-  box-sizing: border-box;
+  width: 33%;
 }
 
 li {
   list-style: none;
-  background: grey;
   flex-basis: 25%;
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 170px;
+  height: 23vh;
 }
 
 a {
   text-decoration: none;
   color: white;
-}
-
-li a {
-  padding: 30px;
 }
 
 .list-item-1 {
@@ -94,12 +93,17 @@ li a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-h2 {
+h2{font-weight: 500;
+  margin: 0;}
+
+header h2 {
   font-size: 2rem;
-  font-weight: 500;
-  margin: 0;
   color: white;
 }
+
+main h2{font-size: 1.8rem;}
+
+[class*="page-description"]{width: 100%;}
 
 .home-page-description {
   background-color: var(--home-color);
@@ -117,7 +121,7 @@ h2 {
   background-color: var(--contact-color);
 }
 
-h3 {
+header h3 {
   font-size: 1.2rem;
   color: white;
 }
@@ -137,10 +141,11 @@ footer a:hover {
 
 main {
   background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+  width: 100%;}
+
+.skills{display: flex;
+flex-direction: row;
+justify-content: space-around;}
 
 main h2,
 main h3 {
@@ -157,3 +162,276 @@ main h3 {
   font-weight: 300;
   line-height: 1.8;
 }
+
+i {font-size: 2em;}
+
+  .copyright {margin-bottom: 0;}
+
+  .bio {font-size: 1.3rem;
+  line-height: 1.8;
+  }
+
+  .bio p {
+    padding: 20px;
+    border: dotted 3px var(--about-color)
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.message input, .message textarea, .message button {
+    font-size: 1.3rem;
+  }
+
+.message button {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  color: white;
+  background-color: var(--contact-color);
+  font-weight: 400;
+}
+
+.message button:hover {
+text-decoration: underline;}
+
+.message input, .message textarea {
+    align-self: center;
+    box-sizing: border-box;
+    width: 90%;
+    font-weight: 300;
+    border: solid 2px var(--contact-color);
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 15px;
+    background-color:hsla(351, 79%, 60%, .05);
+}
+
+input.name {
+  margin-top: 25px;
+}
+
+textarea.message {
+  margin-bottom: 25px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-top: 10px;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 15px 5px;
+}
+
+.card-image{max-width: 60%;}
+
+.card a image{
+width: 80%;
+margin: 0 auto;
+display: flex;}
+
+.card img:hover {
+  scale: 1.05;
+}
+
+.card-footer p {
+  line-height: 1.8;
+}
+
+.project-cards{display: flex;
+flex-direction: column;
+align-items: center;}
+
+.card {
+width: 90%;
+border-color: var(--projects-color);
+padding: 15px;
+box-sizing: border-box;
+}
+
+.atbl-site {
+  margin: 30px 0;
+}
+
+.weather-app {
+  margin-bottom: 30px;
+}
+
+.card-footer {
+  border-top: none;
+  background-color: hsla(26, 93%, 83%, 0.15);
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 16px 16px 10px 16px;
+}
+
+.card .btn{
+  background-color: var(--projects-color);
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.card .btn:hover{
+  text-decoration: underline;
+}
+
+.card-body{padding: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.card-technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: 0 20px;
+}
+
+@media (max-width: 1000px) {
+
+  .hero {
+    flex-direction: column;
+  }
+
+  img {
+    display: flex;
+    align-self: center;
+    min-width: 100%;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .skills{
+    flex-direction: column;}
+
+  [class*="page-description"] h2{display: none;}
+
+  [class*="page-description"] h3{line-height: 2;}
+
+  .occupation {
+  display: none;
+  }
+
+  [class^="name"] {
+  font-size: 1.5rem;
+}
+  
+header h3{font-size: 0.9rem;}
+
+main h2{font-size: 1.5rem;}
+
+.languages{position: relative;}
+
+.languages::after{content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    display: block;
+    clear: both;
+    background-color: var(--home-color);
+  }
+
+  .frameworks{position: relative;
+  padding-top: 15px;}
+
+.frameworks::after{content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -10px;
+    display: block;
+    clear: both;
+    background-color: var(--home-color);
+  }
+
+  .soft-skills{padding-top: 15px;}
+
+  span.nav-text{display: none;}
+
+  li{height: 12vh;}
+
+  i{font-size: 1.5em;}
+
+  .skills h3{font-size: 1rem;}
+
+  .copyright{font-size: 0.8rem;}
+
+  .bio{font-size: 0.9rem;}
+
+  .bio p{padding: 10px;}
+
+  .message input, .message textarea, .message button {
+    font-size: 1rem;
+  }
+
+  input.name {
+  margin-top: 15px;
+}
+
+textarea.message {
+  margin-bottom: 15px;
+}
+
+.card{
+margin: 10px 0;}
+
+.card-body {
+  flex-direction: column;
+}
+
+.card-image {
+  max-width: 100%;
+}
+
+.card-technologies {
+  width: 100%;
+  margin: 0;
+}
+
+.card-footer{margin: 15px 0;}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.card-title {font-size: 1.3rem;}
+
+.card .btn {font-size: 1rem;}
+
+.card-footer {
+  padding-bottom: 0;
+}
+
+.card-footer h3{
+  font-size: 1.1rem;
+}
+
+.card-footer p {
+  font-size: 0.9rem;
+}
+
+}
+
+@media (max-width: 700px){body {
+  width: 90%;}}

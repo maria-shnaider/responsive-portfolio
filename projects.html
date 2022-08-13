@@ -29,9 +29,9 @@
         <img src="/images/my-photo.jpg" alt="Maria Shnaider photo" />
         <div class="header-content">
           <h1>
-            <div class="name p-5 text-white">Maria Shnaider</div>
-            <div class="pb-4 pt-4 ps-5 bg-dark text-white">
-              Frontend developer, based in Ukraine
+            <div class="name p-4 p-lg-5 text-white">Maria Shnaider</div>
+            <div class="occupation pb-4 pt-4 ps-4 ps-lg-5 bg-dark text-white">
+              Front-end developer, based in Ukraine
             </div>
           </h1>
           <nav>
@@ -39,46 +39,85 @@
               <li class="list-item-1">
                 <a href="/"
                   ><i
-                    class="fa-solid fa-house fa-2x d-block text-center mb-1"
+                    class="fa-solid fa-house d-block text-center mb-1"
                   ></i
-                  >Home</a
+                  ><span class="nav-text">Home</span></a
                 >
               </li>
               <li class="list-item-2">
                 <a href="/projects.html"
                   ><i
-                    class="fa-solid fa-file-code fa-2x d-block text-center mb-1"
+                    class="fa-solid fa-file-code d-block text-center mb-1"
                   ></i
-                  >Projects</a
+                  ><span class="nav-text">Projects</span></a
                 >
               </li>
               <li class="list-item-3">
                 <a href="/about.html"
                   ><i
-                    class="fa-solid fa-circle-info fa-2x d-block text-center mb-1"
+                    class="fa-solid fa-circle-info d-block text-center mb-1"
                   ></i
-                  >About</a
+                  ><span class="nav-text">About</span></a
                 >
               </li>
               <li class="list-item-4">
                 <a href="/contact.html"
                   ><i
-                    class="fa-solid fa-paper-plane fa-2x d-block text-center mb-1"
+                    class="fa-solid fa-paper-plane d-block text-center mb-1"
                   ></i
-                  >Contact</a
+                  ><span class="nav-text">Contact</span></a
                 >
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="projects-page-description p-4">
-        <h2>Welcome</h2>
-        <h3 class="mt-2">Check out my skills that can be helpful for you</h3>
+      <div class="projects-page-description pb-3 pt-3 ps-4 pe-4 p-lg-4">
+        <h2>Featured projects</h2>
+        <h3 class="mt-2">Take a look at my pet projects. A little goes a long way. </h3>
       </div>
     </header>
-    <main></main>
-    <footer class="p-5 text-white">
+    <main>
+      <div class="project-cards">
+        <div class="card atbl-site">
+              <h5 class="card-title">ATBL band card-site</h5>
+                  <p class="card-text">This simple site-card was developed in only three weeks of learning from scratch front-end basics with SheCodes.</p>
+          <div class="card-body">
+            <div class="card-image">
+              <a href="/images/allowed-to-be-loud.png" target="_blank">
+                    <img class="card-img-top rounded depress" src="/images/allowed-to-be-loud.png" alt="Allowed to be Loud card-site">
+                   </a>
+            </div>
+            <div class="card-technologies">
+              <div class="card-footer text-muted">
+              <h3>Technologies used:</h3>
+              <p>HTML, CSS, JavaScript</p>
+              </div>
+              <a href="https://www.shecodes.io/workshops/shecodes-basics-7949bf94-9bab-4f69-b7ec-84552c72b8ff/projects/858934" target="blank" class="btn">Visit site</a>
+            </div>
+          </div>
+        </div>
+        <div class="card weather-app">
+              <h5 class="card-title">Weather app</h5>
+                  <p class="card-text">The weather app uses current weather and forecast data from the OpenWeatherMap API. The idea was to create an admirable, clean interface inspired by skeuomorphism and flat design.</p>
+          <div class="card-body">
+            <div class="card-image">
+              <a href="/images/weather-app.png" class="image" target="_blank">
+                    <img class="card-img-top rounded depress" src="/images/weather-app.png" alt="weather app">
+                   </a>
+            </div>
+            <div class="card-technologies">
+              <div class="card-footer text-muted">
+              <h3>Technologies used:</h3>
+              <p>HTML, CSS, Bootstrap, JavaScript, Axios</p>
+              </div>
+              <a href="https://lucky-centaur-1e47e5.netlify.app/" target="_blank" class="btn">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+     <footer class="p-4 p-lg-5 text-white">
       <div class="social">
         <a href="https://t.me/mariia_shnaider" target="_blank"
           ><i class="fa-brands fa-telegram fa-lg me-2"></i
@@ -93,7 +132,7 @@
           ><i class="fa-brands fa-github fa-lg"></i
         ></a>
       </div>
-      <p class="mt-4">Built by Maria Shnaider</p>
+      <p class="copyright mt-2 mt-lg-4">Built by Maria Shnaider</p>
     </footer>
   </body>
 </html>

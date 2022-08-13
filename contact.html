@@ -29,9 +29,9 @@
         <img src="/images/my-photo.jpg" alt="Maria Shnaider photo" />
         <div class="header-content">
           <h1>
-            <div class="name p-5 text-white">Maria Shnaider</div>
-            <div class="pb-4 pt-4 ps-5 bg-dark text-white">
-              Frontend developer, based in Ukraine
+            <div class="name p-4 p-lg-5 text-white">Maria Shnaider</div>
+            <div class="occupation pb-4 pt-4 ps-4 ps-lg-5 bg-dark text-white">
+              Front-end developer, based in Ukraine
             </div>
           </h1>
           <nav>
@@ -39,46 +39,54 @@
               <li class="list-item-1">
                 <a href="/"
                   ><i
-                    class="fa-solid fa-house fa-2x d-block text-center mb-1"
+                    class="fa-solid fa-house d-block text-center mb-1"
                   ></i
-                  >Home</a
+                  ><span class="nav-text">Home</span></a
                 >
               </li>
               <li class="list-item-2">
                 <a href="/projects.html"
                   ><i
-                    class="fa-solid fa-file-code fa-2x d-block text-center mb-1"
+                    class="fa-solid fa-file-code d-block text-center mb-1"
                   ></i
-                  >Projects</a
+                  ><span class="nav-text">Projects</span></a
                 >
               </li>
               <li class="list-item-3">
                 <a href="/about.html"
                   ><i
-                    class="fa-solid fa-circle-info fa-2x d-block text-center mb-1"
+                    class="fa-solid fa-circle-info d-block text-center mb-1"
                   ></i
-                  >About</a
+                  ><span class="nav-text">About</span></a
                 >
               </li>
               <li class="list-item-4">
                 <a href="/contact.html"
                   ><i
-                    class="fa-solid fa-paper-plane fa-2x d-block text-center mb-1"
+                    class="fa-solid fa-paper-plane d-block text-center mb-1"
                   ></i
-                  >Contact</a
+                  ><span class="nav-text">Contact</span></a
                 >
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="contact-page-description p-4">
-        <h2>Welcome</h2>
-        <h3 class="mt-2">Check out my skills that can be helpful for you</h3>
+      <div class="contact-page-description pb-3 pt-3 ps-4 pe-4 p-lg-4">
+        <h2>Let's connect!</h2>
+        <h3 class="mt-2">Feel free to message me. I will get back to you faster than you can say Ferrari.</h3>
       </div>
     </header>
-    <main></main>
-    <footer class="p-5 text-white">
+    <main>
+      <form action="" class="message">
+        <input type="text" class="name" placeholder="Your name" autocomplete="off">
+        <input type="email" class="email" placeholder="Your email" autocomplete="off">
+        <input type="text" class="subject" placeholder="Subject" autocomplete="off">
+        <textarea name="message" class="message" cols="" rows="5" placeholder="Your message"></textarea>
+        <button type="submit" class="p-2 p-lg-3">Submit</button>
+      </form>
+    </main>
+     <footer class="p-4 p-lg-5 text-white">
       <div class="social">
         <a href="https://t.me/mariia_shnaider" target="_blank"
           ><i class="fa-brands fa-telegram fa-lg me-2"></i
@@ -93,7 +101,7 @@
           ><i class="fa-brands fa-github fa-lg"></i
         ></a>
       </div>
-      <p class="mt-4">Built by Maria Shnaider</p>
+      <p class="copyright mt-2 mt-lg-4">Built by Maria Shnaider</p>
     </footer>
   </body>
 </html>
