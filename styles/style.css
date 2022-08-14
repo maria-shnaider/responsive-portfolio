@@ -40,7 +40,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 25аvh;
 }
 
 a {
@@ -473,6 +473,7 @@ textarea.message {
 
   .card .btn {
     font-size: 1rem;
+    margin: 0;
   }
 
   .card-footer {
