@@ -15,6 +15,9 @@ body {
 
 h1 {
   margin: 0;
+  background-color: #272822;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 h2 {
@@ -59,14 +62,6 @@ footer {
 
 i {
   font-size: 2em;
-}
-
-h1 div {
-  font-size: 1rem;
-}
-
-h1:first-child {
-  background-color: #272822;
 }
 
 header img {
@@ -124,11 +119,6 @@ input.name {
 
 textarea.message {
   margin-bottom: 25px;
-}
-
-[class^="name"] {
-  font-size: 2rem;
-  font-weight: 500;
 }
 
 .hero {
@@ -335,6 +325,10 @@ textarea.message {
 }
 
 @media (max-width: 1000px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
   img {
     display: flex;
     align-self: center;
@@ -343,9 +337,6 @@ textarea.message {
 
   li {
     list-style: none;
-  }
-
-  li {
     height: 12vh;
   }
 
@@ -405,10 +396,6 @@ textarea.message {
 
   .occupation {
     display: none;
-  }
-
-  [class^="name"] {
-    font-size: 1.5rem;
   }
 
   .languages {
